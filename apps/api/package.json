@@ -1,0 +1,39 @@
+{
+  "name": "@mybooks/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nest start --watch",
+    "dev:debug": "nest start --debug --watch",
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "vitest run --config ./vitest.config.e2e.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^12.0.1",
+    "@nestjs/core": "^12.0.1",
+    "@nestjs/platform-express": "^12.0.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@mybooks/config": "workspace:*",
+    "@nestjs/cli": "^12.0.0",
+    "@nestjs/schematics": "^12.0.0",
+    "@nestjs/testing": "^12.0.1",
+    "@types/express": "^5.0.0",
+    "@types/node": "catalog:",
+    "@types/supertest": "^7.0.0",
+    "eslint": "catalog:",
+    "globals": "^17.13.0",
+    "source-map-support": "^0.5.21",
+    "supertest": "^7.0.0",
+    "typescript": "catalog:",
+    "vitest": "^4.1.2"
+  }
+}
