@@ -1,0 +1,17 @@
+{
+  "name": "@mybooks/config",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./eslint": "./eslint/base.js",
+    "./tsconfig": "./tsconfig/base.json"
+  },
+  "dependencies": {
+    "@eslint/js": "catalog:",
+    "typescript-eslint": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": "catalog:",
+    "typescript": "catalog:"
+  }
+}
