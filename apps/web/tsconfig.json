@@ -1,0 +1,7 @@
+{
+  "extends": ["$app/tsconfig", "@mybooks/config/tsconfig"],
+  "compilerOptions": {
+    "types": ["$app/types", "node"]
+  },
+  "include": ["src", "vite.config.ts"]
+}
