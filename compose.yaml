@@ -1,5 +1,6 @@
+name: mybooks
 services:
-  mybooks_postgres:
+  postgres:
     image: postgres:18
     restart: unless-stopped
     environment:
