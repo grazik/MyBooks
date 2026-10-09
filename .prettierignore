@@ -1,0 +1,6 @@
+# lockfiles
+pnpm-lock.yaml
+
+# build output
+build
+.svelte-kit
