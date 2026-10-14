@@ -14,5 +14,17 @@
     "dev": "tsc -p tsconfig.build.json --watch --preserveWatchOutput",
     "typecheck": "tsc",
     "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@mybooks/config": "workspace:*",
+    "@types/node": "catalog:",
+    "dotenv": "^18.0.7",
+    "eslint": "catalog:",
+    "prisma": "^7.10.0",
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.0",
+    "@prisma/client": "^7.10.0"
   }
 }

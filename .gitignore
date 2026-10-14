@@ -28,3 +28,5 @@ lerna-debug.log*
 coverage
 
 .idea
+
+packages/database/generated
