@@ -1,5 +1,5 @@
-import { createPrismaClient } from '../src';
-import type { Prisma } from '../generated/prisma/client';
+import { createPrismaClient } from '../src/index.js';
+import type { Prisma } from '../generated/prisma/client.js';
 
 const url = process.env['DATABASE_URL'];
 if (!url) throw new Error('DATABASE_URL is not set');
