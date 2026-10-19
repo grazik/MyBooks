@@ -1,15 +1,10 @@
 {
   "$schema": "https://turborepo.com/schema.json",
   "tasks": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", "build/**"]
-    },
-    "lint": {},
-    "typecheck": {},
-    "dev": {
-      "cache": false,
-      "persistent": true
-    }
+    "codegen": { "outputs": ["generated/**"] },
+    "build": { "dependsOn": ["^build", "codegen", "^codegen"], "outputs": ["dist/**", "build/**"] },
+    "typecheck": { "dependsOn": ["codegen", "^codegen", "^build"] },
+    "lint": { "dependsOn": ["codegen", "^codegen", "^build"] },
+    "dev": { "dependsOn": ["codegen", "^codegen", "^build"], "cache": false, "persistent": true }
   }
 }
