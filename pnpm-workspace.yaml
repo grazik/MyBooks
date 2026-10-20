@@ -9,4 +9,6 @@ catalog:
   '@types/node': ^26.0.0
   globals: ^17.13.0
 allowBuilds:
+  '@prisma/engines': true
   esbuild: true
+  prisma: true
