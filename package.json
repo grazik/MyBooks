@@ -9,6 +9,7 @@
     "build": "turbo run build",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
+    "schema": "turbo run schema",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

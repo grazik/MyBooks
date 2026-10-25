@@ -8,6 +8,7 @@
     "dev:debug": "pnpm run dev --debug",
     "build": "nest build",
     "start": "node dist/main.js",
+    "schema": "node --env-file=../../.env.example dist/gqlSchemaEmitter.js ../../packages/graphql/schema.graphql",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
