@@ -1,0 +1,8 @@
+{
+  "name": "@mybooks/graphql",
+  "private": true,
+  "exports": {
+    ".": "./schema.graphql"
+  },
+  "type": "module"
+}

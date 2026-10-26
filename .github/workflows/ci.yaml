@@ -25,3 +25,13 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm format:check
       - run: pnpm turbo lint typecheck build
+      - name: Generate GraphQL schema
+        run: pnpm turbo run schema
+      - name: Check committed GraphQL schema
+        run: |
+          if [ -n "$(git status --porcelain -- packages/graphql)" ]; then
+            git status --short -- packages/graphql
+            git diff -- packages/graphql
+            echo "::error file=packages/graphql/schema.graphql,title=Schema out of date::Run pnpm schema and commit the result."
+            exit 1
+          fi

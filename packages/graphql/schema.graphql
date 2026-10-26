@@ -1,0 +1,17 @@
+# Generated from apps/api by `pnpm schema`. Do not edit by hand.
+# CI fails if this file differs from the schema the API builds.
+
+type Book {
+  createdAt: DateTime!
+  id: ID!
+  title: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  books: [Book!]!
+}
