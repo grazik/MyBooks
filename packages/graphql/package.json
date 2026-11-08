@@ -2,7 +2,7 @@
   "name": "@mybooks/graphql",
   "private": true,
   "exports": {
-    ".": "./schema.graphql"
+    "./schema.graphql": "./schema.graphql"
   },
   "type": "module"
 }

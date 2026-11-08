@@ -6,5 +6,6 @@ build
 .svelte-kit
 
 packages/database/generated
+apps/web/generated
 
 packages/graphql/schema.graphql
