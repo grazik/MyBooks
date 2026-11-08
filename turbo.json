@@ -1,7 +1,7 @@
 {
   "$schema": "https://turborepo.com/schema.json",
   "tasks": {
-    "codegen": { "outputs": ["generated/**"] },
+    "codegen": { "dependsOn": ["^codegen"], "outputs": ["generated/**"] },
     "build": { "dependsOn": ["^build", "codegen", "^codegen"], "outputs": ["dist/**", "build/**"] },
     "typecheck": { "dependsOn": ["codegen", "^codegen", "^build"] },
     "lint": { "dependsOn": ["codegen", "^codegen", "^build"] },
