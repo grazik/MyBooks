@@ -18,7 +18,7 @@
     "@graphql-typed-document-node/core": "^3.2.0",
     "@mybooks/config": "workspace:*",
     "@mybooks/graphql": "workspace:*",
-    "@sveltejs/adapter-auto": "^8.0.0",
+    "@sveltejs/adapter-static": "^4.0.1",
     "@sveltejs/kit": "^3.0.0",
     "@sveltejs/vite-plugin-svelte": "^7.2.0",
     "@types/node": "catalog:",
